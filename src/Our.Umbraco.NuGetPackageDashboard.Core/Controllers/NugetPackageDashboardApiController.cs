@@ -12,7 +12,7 @@ using Umbraco.Web.WebApi.Filters;
 namespace Our.Umbraco.NuGetPackageDashboard.Core.Controllers
 {
     [UmbracoApplicationAuthorize(Constants.Applications.Developer)]
-    public class NugetPackageDashboardApiController : UmbracoAuthorizedApiController
+    public class NuGetPackageDashboardApiController : UmbracoAuthorizedApiController
     {
         [HttpGet]
         public HttpResponseMessage Get()
