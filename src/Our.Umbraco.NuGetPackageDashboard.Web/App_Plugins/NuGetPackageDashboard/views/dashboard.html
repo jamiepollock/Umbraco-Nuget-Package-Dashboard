@@ -1,0 +1,38 @@
+﻿<div ng-controller="Our.Umbraco.NuGetPackageDashboard.DashboardController">
+    <div class="umb-panel-body umb-scrollable row-fluid">
+        <div class="tab-content form-horizontal">
+            <div class="umb-tab-pane tab-pane active" id="tab01" rel="01">
+                <div class="umb-tab-pane-inner">
+                    <div class="umb-pane">
+                        <div class="umb-property" property="property">
+                            <div class="control-group umb-control-group hidelabel">
+                                <div class="umb-el-wrap">
+                                    <div class="controls controls-row">
+                                        <div class="umb-editor umb-listview">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>ID</th>
+                                                        <th>Version</th>
+                                                        <th>Target Framework</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr ng-repeat="item in items">
+                                                        <td>{{item.Id}}</td>
+                                                        <td>{{item.Version}}</td>
+                                                        <td>{{item.TargetFramework}}</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

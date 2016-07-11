@@ -5,6 +5,18 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Our.Umbraco.NuGetPackageDashboard.Core", "Our.Umbraco.NuGetPackageDashboard.Core\Our.Umbraco.NuGetPackageDashboard.Core.csproj", "{148B7A8A-7007-4DF9-8E7E-436B3AEE7356}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Our.Umbraco.NuGetPackageDashboard.Web", "Our.Umbraco.NuGetPackageDashboard.Web\Our.Umbraco.NuGetPackageDashboard.Web.csproj", "{2B3C5B76-C027-4A96-AD70-606D1CCE170C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{2FA73200-A320-4A5D-95AE-B0D181F28A19}"
+	ProjectSection(SolutionItems) = preProject
+		..\appveyor.yml = ..\appveyor.yml
+		..\build-appveyor.cmd = ..\build-appveyor.cmd
+		..\build.cmd = ..\build.cmd
+		..\build\Our.Umbraco.NuGetPackageDashboard.proj = ..\build\Our.Umbraco.NuGetPackageDashboard.proj
+		..\build\package.nuspec = ..\build\package.nuspec
+		..\build\package.xml = ..\build\package.xml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +27,10 @@ Global
 		{148B7A8A-7007-4DF9-8E7E-436B3AEE7356}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{148B7A8A-7007-4DF9-8E7E-436B3AEE7356}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{148B7A8A-7007-4DF9-8E7E-436B3AEE7356}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B3C5B76-C027-4A96-AD70-606D1CCE170C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B3C5B76-C027-4A96-AD70-606D1CCE170C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B3C5B76-C027-4A96-AD70-606D1CCE170C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B3C5B76-C027-4A96-AD70-606D1CCE170C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

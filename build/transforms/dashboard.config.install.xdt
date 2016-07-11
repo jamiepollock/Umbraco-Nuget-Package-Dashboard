@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dashBoard xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <section alias="Our.Umbraco.NuGetPackageDashboard" xdt:Locator="Match(alias)" xdt:Transform="InsertIfMissing">
+    <areas>
+      <area>developer</area>
+    </areas>
+    <tab caption="NuGet Package Dashboard">
+      <access>
+        <grant>admin</grant>
+      </access>
+      <control showOnce="false" addPanel="true" panelCaption="">
+        /App_Plugins/NuGetPackageDashboard/views/dashboard.html
+      </control>
+    </tab>
+  </section>
+</dashBoard>

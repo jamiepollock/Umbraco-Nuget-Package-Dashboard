@@ -1,11 +1,11 @@
 ﻿using System;
+using System.Runtime.Serialization;
 using System.Xml.Serialization;
 
 namespace Our.Umbraco.NuGetPackageDashboard.Core.Models
 {
-    [Serializable]
     [XmlType]
-    internal class NuGetPackage
+    public class NuGetPackage
     {
         [XmlAttribute("id")]
         public string Id { get; set; }
