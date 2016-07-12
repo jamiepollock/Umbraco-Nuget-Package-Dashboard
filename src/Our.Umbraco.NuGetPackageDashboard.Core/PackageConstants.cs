@@ -3,6 +3,7 @@
     internal static class PackageConstants
     {
         public const string Name = "NuGetPackageDashboard";
+        public const string CacheKey = "Our.Umbraco.NuGetPackageDashboard:Packages";
 
         public static class XmlConfigSettings
         {

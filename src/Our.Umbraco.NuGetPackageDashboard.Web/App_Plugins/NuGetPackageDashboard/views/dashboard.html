@@ -1,35 +1,42 @@
-﻿<div ng-controller="Our.Umbraco.NuGetPackageDashboard.DashboardController">
-    <div class="umb-panel-body umb-scrollable row-fluid">
-        <div class="tab-content form-horizontal">
-            <div class="umb-tab-pane tab-pane active" id="tab01" rel="01">
-                <div class="umb-tab-pane-inner">
-                    <div class="umb-pane">
-                        <div class="umb-property" property="property">
-                            <div class="control-group umb-control-group hidelabel">
-                                <div class="umb-el-wrap">
-                                    <div class="controls controls-row">
-                                        <div class="umb-editor umb-listview">
-                                            <table class="table table-striped">
-                                                <thead>
-                                                    <tr>
-                                                        <th>ID</th>
-                                                        <th>Version</th>
-                                                        <th>Target Framework</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr ng-repeat="item in items">
-                                                        <td>{{item.Id}}</td>
-                                                        <td>{{item.Version}}</td>
-                                                        <td>{{item.TargetFramework}}</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+﻿<div ng-controller="Our.Umbraco.NuGetPackageDashboard.DashboardController" class="npd--dashboard">
+    <div class="umb-property" property="property">
+        <div class="control-group umb-control-group hidelabel">
+            <div class="umb-el-wrap">
+                <div class="controls controls-row">
+                    <div class="umb-editor umb-listview">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Version</th>
+                                    <th>Target Framework</th>
+                                    <td>
+                                        <form class="pull-right" novalidate="">
+                                            <i class="icon-search" ng-click="enterSearch($event)"></i>
+                                            <input type="text" ng-model="filter" on-keyup="search()" prevent-enter-submit="" no-dirty-check="">
+                                        </form>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody ng-show="items.length > 0">
+                                <tr ng-repeat="item in items">
+                                    <td>{{item.Id}}</td>
+                                    <td>{{item.Version}}</td>
+                                    <td>{{item.TargetFramework}}</td>
+                                    <td><!-- --></td>
+                                </tr>
+                            </tbody>
+                            <tbody ng-hide="items.length > 0">
+                                <tr>
+                                    <td colspan="4">No packages found.</td>
+                                </tr>
+                            </tbody>
+                            <tfoot ng-show="items.length > 0">
+                                <tr>
+                                    <td colspan="4">Showing {{items.length}} of {{totalItems.length}} packages.</td>
+                                </tr>
+                            </tfoot>
+                        </table>
                     </div>
                 </div>
             </div>
