@@ -3,7 +3,7 @@
     $scope.totalItems = [];
     $scope.items = [];
 
-    var doSearch = function(items, filter) {
+    var doSearch = function (items, filter) {
         var cleanFilter = filter.trim().toLowerCase();
 
         if (cleanFilter.length === 0) {
@@ -11,7 +11,7 @@
         }
 
         $scope.items = _.filter(items,
-            function(item) {
+            function (item) {
                 return item.Id.toLowerCase().indexOf(cleanFilter) > -1 ||
                     item.Version.toLowerCase().indexOf(cleanFilter) > -1 ||
                     item.TargetFramework.toLowerCase() === cleanFilter;
@@ -23,8 +23,15 @@
              .then(function (response) {
                  $scope.totalItems = response.data;
                  doSearch($scope.totalItems, $scope.filter);
-             });
+             }, function (response) {
+                 $scope.dashboardException = {
+                     Title: response.data.Message,
+                     Message: response.data.ExceptionMessage
+                 };
+             }
+        );
     };
+
     $scope.enterSearch = function ($event) {
         $($event.target).next().focus();
     };

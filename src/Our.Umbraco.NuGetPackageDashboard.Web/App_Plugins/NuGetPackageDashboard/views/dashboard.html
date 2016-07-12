@@ -4,7 +4,11 @@
             <div class="umb-el-wrap">
                 <div class="controls controls-row">
                     <div class="umb-editor umb-listview">
-                        <table class="table table-striped">
+                        <div class="alert alert-error" ng-show="dashboardException">
+                            <h4>{{dashboardException.Title}}</h4>
+                            <p>{{dashboardException.Message}}</p>
+                        </div>
+                        <table class="table table-striped" ng-hide="dashboardException">
                             <thead>
                                 <tr>
                                     <th>ID</th>
