@@ -1,0 +1,8 @@
+﻿{
+	"javascript": [
+		"~/App_Plugins/NuGetPackageDashboard/js/dashboardController.js"
+	],
+	"css": [
+		"~/App_Plugins/NuGetPackageDashboard/css/dashboard.css"
+	]
+}
