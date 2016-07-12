@@ -31,9 +31,9 @@
     <PackageId>Our.Umbraco.NuGetPackageDashboard</PackageId>
     <Copyright>Copyright &#169; Jamie Pollock and contributors.</Copyright>
     <Owners>Jamie Pollock</Owners>
-    <Description>A backoffice plugin to view Migrations installed on an Umbraco instance</Description>
+    <Description>A backoffice plugin to view installed NuGet packages on an Umbraco instance</Description>
     <IconUrl>https://raw.githubusercontent.com/jamiepollock/Umbraco-NuGet-Package-Dashboard/master/build/assets/icon/umbraco-NuGetPackageDashboard-128.png</IconUrl>
-    <Tags>umbraco</Tags>
+    <Tags>umbraco nuget</Tags>
     <Language>en-GB</Language>
     <RequireLicenseAcceptance>false</RequireLicenseAcceptance>
   </PropertyGroup>
