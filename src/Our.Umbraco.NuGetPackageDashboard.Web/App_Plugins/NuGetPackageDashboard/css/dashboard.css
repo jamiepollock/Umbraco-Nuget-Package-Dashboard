@@ -5,3 +5,44 @@
     color: #555;
     cursor: pointer;
 }
+
+.npd--dashboard table thead {
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #f8f8f8;
+}
+
+.npd--dashboard .umb-editor-sub-header {
+   padding: 15px 0;
+   margin-bottom: 30px;
+   background: #ffffff;
+   display: flex;
+   justify-content: space-between;
+   margin-top: -30px;
+   position: relative;
+   top: 0;
+}
+
+.npd--dashboard .umb-editor-sub-header__content-left {
+   margin-right: auto;
+}
+
+.npd--dashboard .umb-editor-sub-header__content-right {
+   margin-left: auto;
+}
+
+.npd--dashboard .umb-editor-sub-header__content-left,
+.npd--dashboard .umb-editor-sub-header__content-right {
+   display: flex;
+   align-items: stretch;
+}
+
+.npd--dashboard .umb-editor-sub-header__content-left .umb-editor-sub-header__section:first-child {
+   border-left: none;
+   padding-left: 0;
+}
+
+.npd--dashboard .umb-editor-sub-header__content-right .umb-editor-sub-header__section:last-child {
+   border-right: none;
+   padding-right: 0;
+}

@@ -31,13 +31,25 @@
              }
         );
     };
-
-    $scope.enterSearch = function ($event) {
-        $($event.target).next().focus();
-    };
-
-    $scope.search = function () {
+    var makeSearch = function () {
         doSearch($scope.totalItems, $scope.filter);
+    };
+    var searchListView = _.debounce(function () {
+        $scope.$apply(function () {
+            makeSearch();
+        });
+    }, 500);
+
+    $scope.forceSearch = function (ev) {
+        //13: enter
+        switch (ev.keyCode) {
+            case 13:
+                makeSearch();
+                break;
+        }
+    };
+    $scope.enterSearch = function () {
+        searchListView();
     };
 
     $scope.refreshData();
