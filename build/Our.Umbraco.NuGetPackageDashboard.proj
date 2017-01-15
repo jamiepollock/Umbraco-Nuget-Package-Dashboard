@@ -21,6 +21,7 @@
     <Readme>A backoffice plugin to view installed NuGet packages on an Umbraco instance</Readme>
     <AuthorName>Jamie Pollock</AuthorName>
     <AuthorUrl>https://github.com/jamiepollock/Umbraco-NuGet-Package-Dashboard/graphs/contributors</AuthorUrl>
+    <IconUrl>https://raw.githubusercontent.com/jamiepollock/Umbraco-NuGet-Package-Dashboard/master/build/assets/icon/umbraco-nugetpackagedashboard-128.png</IconUrl>
     <PackageLicenseName>MIT license</PackageLicenseName>
 		<PackageLicenseUrl>http://opensource.org/licenses/MIT</PackageLicenseUrl>
     <ProjectUrl>https://github.com/jamiepollock/Umbraco-NuGet-Package-Dashboard</ProjectUrl>
@@ -32,7 +33,6 @@
     <Copyright>Copyright &#169; Jamie Pollock and contributors.</Copyright>
     <Owners>Jamie Pollock</Owners>
     <Description>A backoffice plugin to view installed NuGet packages on an Umbraco instance</Description>
-    <IconUrl>https://raw.githubusercontent.com/jamiepollock/Umbraco-NuGet-Package-Dashboard/master/build/assets/icon/umbraco-nugetpackagedashboard-128.png</IconUrl>
     <Tags>umbraco nuget</Tags>
     <Language>en-GB</Language>
     <RequireLicenseAcceptance>false</RequireLicenseAcceptance>
@@ -166,6 +166,7 @@
       PackageVersion="$(ProductVersion)"
       AuthorName="$(AuthorName)"
       AuthorUrl="$(AuthorUrl)"
+      IconUrl="$(IconUrl)"
       Readme="$(Readme)"
       PackageLicenseName="$(PackageLicenseName)"
       PackageLicenseUrl="$(PackageLicenseUrl)"
